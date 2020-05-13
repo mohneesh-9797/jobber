@@ -1,13 +1,13 @@
 echo "hello";
 apk update
-apk add -y go
-apk add -y rsync
-apk add -y make
-apk add -y git 
-apk add -y gcc 
-apk add -y musl-dev
-apk add -y alpine-sdk
-apk add -y git 
+apk add go
+apk add rsync
+apk add make
+apk add git 
+apk add gcc 
+apk add musl-dev
+apk add alpine-sdk
+apk add git 
 adduser --disabled-password  mohneeesh
 mohneesh ALL=(ALL)ALL >> /etc/sudoers 
 su mohneesh
