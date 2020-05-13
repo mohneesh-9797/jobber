@@ -8,7 +8,7 @@ apk add -y gcc
 apk add -y musl-dev
 apk add -y alpine-sdk
 apk add -y git 
-adduser mohneeesh
+adduser --disabled-password  mohneeesh
 mohneesh ALL=(ALL)ALL >> /etc/sudoers 
 su mohneesh
 sudo git clone https://github.com/mohneesh9797-puresoftware/jobber/
