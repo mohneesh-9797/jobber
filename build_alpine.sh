@@ -12,6 +12,7 @@ apk add git
 adduser --disabled-password  mohneesh
 cat /etc/sudo.conf
 sh -c "echo 'Set disable_coredump false'" >> /etc/sudoers
+sh -c "echo 'sudo	ALL=(ALL) ALL'" >> /etc/sudoers
 echo "1"
 sudo sh -c "echo 'mohneesh ALL=NOPASSWD: ALL' >> /etc/sudoers"
 cat /etc/sudoers
