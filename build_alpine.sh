@@ -9,6 +9,7 @@ apk add gcc
 apk add musl-dev
 apk add alpine-sdk
 apk add git 
+sudo --version 
 adduser --disabled-password  mohneesh
 cat /etc/sudo.conf
 sh -c "echo 'sudo	ALL=(ALL) ALL'" >> /etc/sudoers
