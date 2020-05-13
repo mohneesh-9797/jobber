@@ -11,7 +11,7 @@ apk add alpine-sdk
 apk add git 
 sudo --version 
 adduser --disabled-password  mohneesh
-sudo sh -c "echo 'mohneesh ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
+sh -c "echo 'mohneesh ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
 cd /tmp
 git clone https://github.com/mohneesh9797-puresoftware/jobber/
 chmod -R a+w jobber
@@ -22,7 +22,7 @@ chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 su mohneesh
-abuild-keygen –a –i
 cd /tmp/jobber/packaging/alpine 
+abuild-keygen –a –i
 abuild checksum
 abuild –r 
