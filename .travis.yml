@@ -8,7 +8,8 @@ arch:
 services:
   - docker
 
+install: 
+- docker pull alpine:latest
 script:
-  - make check
-  - make -C smoke_tests
+  - bash ./docker_run.sh 
 
