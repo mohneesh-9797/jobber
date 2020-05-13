@@ -11,5 +11,6 @@ services:
 install: 
 - docker pull alpine:latest
 script:
+  - chmod 777 docker_run.sh  
   - bash ./docker_run.sh 
 
