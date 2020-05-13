@@ -9,7 +9,7 @@ apk add musl-dev
 apk add alpine-sdk
 apk add git 
 adduser --disabled-password  mohneesh
-sudo sh -c "echo 'mohneesh ALL=NOPASSWD: ALL' >> /etc/sudoers"
+sudo sh -c "echo 'mohneesh ALL=(ALL) ALL' >> /etc/sudoers"
 cat /etc/sudoers
 su mohneesh
 sudo git clone https://github.com/mohneesh9797-puresoftware/jobber/
