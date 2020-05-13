@@ -12,7 +12,7 @@ apk add git
 sudo --version 
 adduser --disabled-password  mohneesh
 sh -c "echo 'sudo	ALL=(ALL) ALL'" >> /etc/sudoers
-sudo sh -c "echo 'mohneesh ALL=NOPASSWD: ALL' >> /etc/sudoers"
+sudo sh -c "echo 'mohneesh ALL=(ALL)NOPASSWD: ALL' >> /etc/sudoers"
 cat /etc/sudoers
 su mohneesh
 sudo git clone https://github.com/mohneesh9797-puresoftware/jobber/
