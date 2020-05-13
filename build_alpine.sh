@@ -11,13 +11,9 @@ apk add alpine-sdk
 apk add git 
 sudo --version 
 adduser --disabled-password  mohneesh
-cat /etc/sudo.conf
 sh -c "echo 'sudo	ALL=(ALL) ALL'" >> /etc/sudoers
-echo "1"
 sudo sh -c "echo 'mohneesh ALL=NOPASSWD: ALL' >> /etc/sudoers"
 cat /etc/sudoers
-echo "hi hello"
-cat /etc/sudo.conf
 su mohneesh
 sudo git clone https://github.com/mohneesh9797-puresoftware/jobber/
 sudo addgroup mohneesh abuild
