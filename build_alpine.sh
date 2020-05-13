@@ -14,6 +14,7 @@ cat /etc/sudo.conf
 echo "1"
 sudo sh -c "echo 'mohneesh ALL=NOPASSWD: ALL' >> /etc/sudoers"
 cat /etc/sudoers
+echo "hi hello"
 cat /etc/sudo.conf
 su mohneesh
 sudo git clone https://github.com/mohneesh9797-puresoftware/jobber/
