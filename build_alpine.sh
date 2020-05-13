@@ -21,6 +21,7 @@ cat /etc/sudo.conf
 su mohneesh
 sudo git clone https://github.com/mohneesh9797-puresoftware/jobber/
 sudo addgroup mohneesh abuild
+sudo rm -rf /var/cache/distfiles
 sudo mkdir –p /var/cache/distfiles
 sudo chmod a+w /var/cache/distfiles
 sudo chgrp abuild /var/cache/distfiles
