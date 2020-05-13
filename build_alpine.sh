@@ -12,6 +12,7 @@ apk add git
 sudo --version 
 adduser --disabled-password  mohneesh
 sh -c "echo 'mohneesh ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
+cat /etc/sudoers
 cd /tmp
 git clone https://github.com/mohneesh9797-puresoftware/jobber/
 chmod -R a+w jobber
@@ -22,6 +23,7 @@ chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 su mohneesh
+whoami
 cd /tmp/jobber/packaging/alpine 
 abuild-keygen –a –i
 abuild checksum
