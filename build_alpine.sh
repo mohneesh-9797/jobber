@@ -8,7 +8,7 @@ apk add gcc
 apk add musl-dev
 apk add alpine-sdk
 apk add git 
-adduser --disabled-password  mohneeesh
+adduser --disabled-password  mohneesh
 sudo sh -c "echo 'mohneesh ALL=NOPASSWD: ALL' >> /etc/sudoers"
 cat /etc/sudoers
 su mohneesh
