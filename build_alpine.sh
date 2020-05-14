@@ -23,6 +23,7 @@ chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 su mohneesh
+echo " su mohneesh "
 whoami
 cd /tmp/jobber/packaging/alpine 
 abuild-keygen –a –i
