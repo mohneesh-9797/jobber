@@ -1,6 +1,5 @@
 echo "hello";
 apk update
-apk add sudo
 apk add go
 apk add rsync
 apk add make
@@ -8,13 +7,10 @@ apk add git
 apk add gcc 
 apk add musl-dev
 apk add alpine-sdk
-apk add git 
 sudo --version 
 adduser --disabled-password  mohneesh
 sh -c "echo 'mohneesh ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
-su mohneesh 
 whoami
-exit
 cat /etc/sudoers
 cd /tmp
 git clone https://github.com/mohneesh9797-puresoftware/jobber/
@@ -29,6 +25,6 @@ su mohneesh
 echo " su mohneesh "
 whoami
 cd /tmp/jobber/packaging/alpine 
-abuild-keygen –a –i
-abuild checksum
-abuild –r 
+sudo -E su mohneesh "abuild-keygen –a –i"
+sudo -E su mohneesh "abuild checksum"
+sudo -E su mohneesh "abuild –r" 
