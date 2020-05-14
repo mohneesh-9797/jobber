@@ -25,6 +25,6 @@ su mohneesh
 echo " su mohneesh "
 whoami
 cd /tmp/jobber/packaging/alpine 
-sudo -E su mohneesh "abuild-keygen –a –i"
-sudo -E su mohneesh "abuild checksum"
-sudo -E su mohneesh "abuild –r" 
+sudo -E su mohneesh " sh 'abuild-keygen –a –i'"
+sudo -E su mohneesh "sh 'abuild checksum'"
+sudo -E su mohneesh "sh 'abuild –r'" 
