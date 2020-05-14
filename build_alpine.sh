@@ -1,6 +1,7 @@
 echo "hello";
 apk update
 apk add go
+apk add su-exec
 apk add rsync
 apk add make
 apk add git 
