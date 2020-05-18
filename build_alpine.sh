@@ -23,7 +23,7 @@ chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 cd /tmp/jobber/packaging/
 chmod -R a+w alpine/
-su - mohneesh -c 'whoami;cd /tmp/jobber/packaging/alpine;pwd;abuild-keygen –a –i -n;'
+su - mohneesh -c 'whoami;cd /tmp/jobber/packaging/alpine;pwd;abuild-keygen –a –q -n;'
 su - mohneesh
 whoami
 cd /tmp/jobber/packaging/alpine 
