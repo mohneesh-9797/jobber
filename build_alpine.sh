@@ -11,6 +11,7 @@ apk add alpine-sdk
 sudo --version 
 adduser --disabled-password  mohneesh
 sh -c "echo 'mohneesh ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
+sh -c "echo 'root ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
 whoami
 cd /tmp
 git clone https://github.com/mohneesh9797-puresoftware/jobber/
