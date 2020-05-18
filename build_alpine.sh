@@ -21,6 +21,8 @@ mkdir –p /var/cache/distfiles
 chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
+cd /tmp/jobber/packaging/
+chmod -R a+w alpine/
 su - mohneesh -c 'whoami;cd /tmp/jobber/packaging/alpine;pwd;abuild-keygen –a –i;'
 su - mohneesh
 whoami
