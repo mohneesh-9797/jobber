@@ -23,6 +23,7 @@ chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 chmod 777 jobber/build_package.sh
+exec su-exec mohneesh "pwd "
 exec su-exec mohneesh "./jobber/build_package.sh "
 cd /tmp/jobber/packaging/alpine 
 chmod -R 777 /home/mohneesh/.abuild/
