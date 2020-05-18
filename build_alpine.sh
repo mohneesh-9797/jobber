@@ -22,8 +22,8 @@ chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 su - mohneesh -c 'abuild-keygen –a –i;'
+su - mohneesh
 whoami
-exec su-exec mohneesh "./build_package.sh "
 cd /tmp/jobber/packaging/alpine 
 chmod -R 777 /home/mohneesh/.abuild/
 exec su-exec mohneesh "abuild-keygen –a –i"
