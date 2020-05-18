@@ -25,10 +25,11 @@ chmod g+w /var/cache/distfiles
 chmod 777 jobber/build_package.sh
 pwd
 ls
-exec su-exec mohneesh "pwd "
+su - mohneesh
+whoami
 exec su-exec mohneesh "./jobber/build_package.sh "
 cd /tmp/jobber/packaging/alpine 
 chmod -R 777 /home/mohneesh/.abuild/
 exec su-exec mohneesh "sh 'abuild-keygen –a –i'"
-sudo -E su mohneesh "sh 'abuild checksum'"
-sudo -E su mohneesh "sh 'abuild –r'" 
+sudo -u mohneesh "abuild checksum"
+sudo -u mohneesh "abuild –r" 
