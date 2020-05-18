@@ -22,7 +22,7 @@ mkdir –p /var/cache/distfiles
 chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
-exec su-exec mohneesh "whoami"
+exec su-exec mohneesh "whoami && cd /tmp/jobber/packaging/alpine && pwd "
 cd /tmp/jobber/packaging/alpine 
 chmod -R 777 /home/mohneesh/.abuild/
 exec su-exec mohneesh "sh 'abuild-keygen –a –i'"
