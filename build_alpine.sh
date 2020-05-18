@@ -21,10 +21,7 @@ mkdir –p /var/cache/distfiles
 chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
-chmod 777 jobber/build_package.sh
-pwd
-ls
-sudo -E su - mohneesh "abuild-keygen –a –i"
+sudo -E su - mohneesh 'abuild-keygen –a –i;'
 whoami
 exec su-exec mohneesh "./build_package.sh "
 cd /tmp/jobber/packaging/alpine 
