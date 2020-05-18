@@ -21,7 +21,7 @@ mkdir –p /var/cache/distfiles
 chmod a+w /var/cache/distfiles
 chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
-sudo su - mohneesh -c 'whoami;abuild-keygen –a –i;'
+su - mohneesh -c 'whoami;abuild-keygen –a –i;'
 su - mohneesh
 whoami
 cd /tmp/jobber/packaging/alpine 
