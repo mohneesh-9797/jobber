@@ -1,17 +1,8 @@
 echo "hello";
 apk update
-apk add go
-apk add su-exec
-apk add rsync
-apk add make
-apk add git 
-apk add gcc 
-apk add musl-dev
-apk add alpine-sdk
-sudo --version 
+apk add go rsync make git gcc musl-dev alpine-sdk
 adduser --disabled-password  mohneesh
 sh -c "echo 'mohneesh ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
-whoami
 cd /tmp
 git clone https://github.com/mohneesh-9797/jobber/
 chmod -R a+w jobber
