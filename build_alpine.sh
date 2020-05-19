@@ -29,4 +29,5 @@ su - mohneesh -c "whoami;abuild-keygen -a -i"
 su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild checksum;"
 su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild -r"
 cd /home/mohneesh/packages/packaging/aarch64/
+pwd
 ls
