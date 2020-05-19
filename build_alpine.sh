@@ -24,7 +24,8 @@ chmod g+w /var/cache/distfiles
 cd /tmp/jobber/packaging/
 chmod -R a+w alpine/
 chmod a+w alpine/APKBUILD
-su - mohneesh -c 'whoami;cd /tmp/jobber/packaging/alpine;pwd;ls;chmod 777 APKBUILD;abuild-keygen –a –q -n;'
+addgroup  mohneesh abuild
+su - mohneesh -c "whoami;abuild-keygen -a -i"
 su - mohneesh
 whoami
 cd /tmp/jobber/packaging/alpine 
