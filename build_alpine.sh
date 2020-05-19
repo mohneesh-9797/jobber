@@ -1,5 +1,5 @@
 apk update
-apk add go rsync make git gcc musl-dev alpine-sdk
+apk add go rsync make git gcc musl-dev alpine-sdk tree
 adduser --disabled-password  mohneesh
 sh -c "echo 'mohneesh ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
 cd /tmp
@@ -14,4 +14,5 @@ addgroup  mohneesh abuild
 su - mohneesh -c "abuild-keygen -a -i"
 su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild checksum;"
 su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild -r"
-ls /home/mohneesh/packages/packaging/aarch64/
+Uname -m 
+tree /home/mohneesh/packages/packaging/
