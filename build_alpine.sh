@@ -14,5 +14,5 @@ addgroup  mohneesh abuild
 su - mohneesh -c "abuild-keygen -a -i"
 su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild checksum;"
 su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild -r"
-Uname -m 
+uname -m 
 tree /home/mohneesh/packages/packaging/
