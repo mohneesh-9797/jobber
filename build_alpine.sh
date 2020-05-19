@@ -26,8 +26,4 @@ chmod -R a+w alpine/
 chmod a+w alpine/APKBUILD
 addgroup  mohneesh abuild
 su - mohneesh -c "whoami;abuild-keygen -a -i"
-su - mohneesh
-whoami
-cd /tmp/jobber/packaging/alpine 
-su - mohneesh -c "abuild checksum"
-su - mohneesh -c "abuild –r" 
+su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild checksum;abuild –r"
