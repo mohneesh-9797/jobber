@@ -15,7 +15,6 @@ whoami
 cd /tmp
 git clone https://github.com/mohneesh-9797/jobber/
 chmod -R a+w jobber
-addgroup mohneesh abuild
 rm -rf /var/cache/distfiles
 mkdir –p /var/cache/distfiles
 chmod a+w /var/cache/distfiles
