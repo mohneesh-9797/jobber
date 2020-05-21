@@ -7,16 +7,6 @@ arch:
     - arm64
 services:
   - docker
-jobs:
-  include:
-  - arch : amd64
-    script:
-        - make check
-        - make -C smoke_tests
-    - arch : arm64
-      script:
-        - make check
-        - make -C smoke_tests
 script:
   - docker pull alpine:latest
   - chmod 777 docker_run.sh  
