@@ -16,7 +16,7 @@ jobs:
         - make -C smoke_tests
   - arch : arm64
     script:
-        - apt-get install golang-go
+        - sudo apt-get install golang-go
         - make check
         - make -C smoke_tests
 script:
