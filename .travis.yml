@@ -15,5 +15,5 @@ jobs:
   - arch : arm64
     script:
         - docker pull alpine:latest
-        - chmod 777 docker_run.sh  
+        - chmod a+x docker_run.sh  
         - bash ./docker_run.sh
