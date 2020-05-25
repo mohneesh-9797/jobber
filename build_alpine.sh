@@ -12,7 +12,6 @@ chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 addgroup  mohneesh abuild
 su - mohneesh -c "abuild-keygen -a -i"
-su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild checksum;"
-su - mohneesh -c "cd /tmp/jobber/packaging/alpine;abuild -r"
+sudo - mohneesh "make -C packaging/alpine pkg-local "DESTDIR=/tmp/"
 uname -m 
-tree /home/mohneesh/packages/packaging/
+tree /tmp/
