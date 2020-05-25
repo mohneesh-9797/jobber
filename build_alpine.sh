@@ -1,7 +1,7 @@
 apk update
 apk add go rsync make git gcc musl-dev alpine-sdk tree
-adduser --disabled-password  odidev
-sh -c "echo 'odidev ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
+adduser --disabled-password  jobber
+sh -c "echo 'jobber ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
 cd /tmp
 git clone https://github.com/odidev/jobber/
 chmod -R a+w jobber
