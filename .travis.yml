@@ -11,6 +11,7 @@ jobs:
     script:
         - make check
         - make -C smoke_tests
+ 
   - arch : arm64
     script:
         - docker pull alpine:latest
