@@ -14,4 +14,4 @@ addgroup  mohneesh abuild
 su - mohneesh -c "abuild-keygen -a -i"
 su - mohneesh -c "cd /tmp/jobber; make -C packaging/alpine pkg-local"
 uname -m 
-tree /tmp/
+tree /home/mohneesh/
