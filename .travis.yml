@@ -2,19 +2,17 @@ sudo: required
 
 language: Go
 
-arch:
-    - amd64
+
 services:
   - docker
 jobs:
   include:
+  - arch : amd64
+    script:
+        - make check
+        - make -C smoke_tests
   - arch : arm64
     script:
         - docker pull alpine:latest
         - chmod 777 docker_run.sh  
-        - bash ./docker_run.sh 
-script:
-- make check
-- make -C smoke_tests
-
-
+        - bash ./docker_run.sh
