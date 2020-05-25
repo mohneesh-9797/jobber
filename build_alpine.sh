@@ -12,7 +12,5 @@ chgrp abuild /var/cache/distfiles
 chmod g+w /var/cache/distfiles
 addgroup jobber abuild
 su - jobber -c "abuild-keygen -a -i"
-su - jobber -c "cd /tmp/jobber/packaging/alpine;abuild checksum;"
-su - jobber -c "cd /tmp/jobber/packaging/alpine;abuild -r"
-uname -m
+su - jobber -c "cd /tmp/jobber; make -C packaging/alpine pkg-local"
 tree /home/jobber/packages/packaging/
